@@ -1,11 +1,16 @@
+require('dotenv').config()
 ////Allows use of express module
 let express = require('express')
 let app = express()
 let routes = require('./routes/index')
 
+////
+const mongoose = require('mongoose')
+mongoose.connect(process.env.MONGODB_URI)
+
 ///Middleware
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
 
 ///Connecting my routes
 app.use('/', routes)
