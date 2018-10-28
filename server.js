@@ -5,8 +5,8 @@ let app = express()
 let routes = require('./routes/index')
 
 ////
-// let mongoose = require('mongoose')
-// mongoose.connect('process.env.MONGODB_URI')
+let mongoose = require('mongoose')
+mongoose.connect('process.env.MONGODB_URI/localhost/cartoon-stations')
 
 ///Middleware
 app.use(express.urlencoded({ extended: true }))
