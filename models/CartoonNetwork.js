@@ -10,4 +10,4 @@ let cartoonNetwork = new Schema({
 
 })
 
-module.exports = mongoose.model('Cartoon-Network', cartoonNetwork)
+module.exports = mongoose.model('CartoonNetwork', cartoonNetwork)
