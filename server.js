@@ -7,7 +7,7 @@ let routes = require('./routes/index')
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-///
+///Connecting my routes
 app.use('/', routes)
 
 ///Connecting to my local server
